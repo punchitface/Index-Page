@@ -1,0 +1,211 @@
+.buttton_order {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    background: none;
+    font-size: 20px;
+    font-family: "OpenSansBold", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px -1px 0px #368954;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+#step_1, #step_2, #step_3{
+
+    width: 150px;
+
+}
+
+@media only screen
+and (max-width: 480px) {
+    .buttton_order:not(.btn) {
+        width: 240px;
+        height: 42px;
+        font-size: 14px;
+        margin: 20px auto;
+        padding: 0;
+    }
+}
+
+.buttton_order_v1 {
+    background: -webkit-linear-gradient(#72e383, #36ce7d);
+    background: linear-gradient(#72e383, #36ce7d);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.15),
+    inset 0px -3px 0 0 #40915c;
+    text-shadow: #368954 0 -1px;
+}
+
+.buttton_order_v1:hover {
+    background: -webkit-linear-gradient(bottom, #08ad71, #6de87e);
+    background: linear-gradient(to top, #08ad71, #6de87e);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2),
+    inset 0px -3px 0 0 #40915c;
+}
+
+.buttton_order_v1:focus {
+    outline: none;
+    background: -webkit-linear-gradient(bottom, #6fe07f, #36ce7d);
+    background: linear-gradient(to top, #6fe07f, #36ce7d);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+    text-shadow: #368954 0 1px;
+}
+
+/* Button 2 */
+
+.buttton_order_v2 {
+    background: -webkit-linear-gradient(bottom, #ffe4a5, #ffffff);
+    background: linear-gradient(to top, #ffe4a5, #ffffff);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.15),
+    inset 0px -3px 0px 0px #bf6043;
+    color: #ff720f;
+    text-shadow: none;
+}
+
+.button_order_v2:hover {
+    color: #ff832c;
+}
+
+.buttton_order_v2:focus {
+    outline: none;
+    background: -webkit-linear-gradient(bottom, #fffffe, #ffeec4);
+    background: linear-gradient(to top, #fffffe, #ffeec4);
+    box-shadow: none;
+}
+
+.button_order_v3 {
+    outline: none;
+    text-shadow: none;
+    background: -webkit-linear-gradient(bottom, #c8f0da, #ffffff);
+    background: linear-gradient(to top, #c8f0da, #ffffff);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.15),
+    inset 0px -3px 0px 0px #328951;
+    color: #35ce7d;
+}
+
+.button_order_v3:hover {
+    background: -webkit-linear-gradient(bottom, #9fe1b9, #ffffff);
+    background: linear-gradient(to top, #9fe1b9, #ffffff);
+}
+
+.button_order_v3:focus {
+    background: -webkit-linear-gradient(top, #9fe1b9, #ffffff);
+    background: linear-gradient(to bottom, #9fe1b9, #ffffff);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* MENU BUTTON */
+
+.button_menu {
+    width: 280px;
+    height: 40px;
+    border: 1px solid;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 50px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.button_menu[class*='button_menu']:focus {
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: inset 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button_menu_classic:hover,
+.button_menu_premium:hover,
+.button_menu_vegan:hover {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button_menu_classic {
+    border-color: #f97d60;
+}
+
+.button_menu_classic:focus,
+.button_menu_classic_select {
+    background: #f97d60;
+}
+
+.button_menu_premium {
+    border-color: #ffb500;
+}
+
+.button_menu_premium:focus,
+.button_menu_premium_select {
+    background: #ffb500;
+}
+
+.button_menu_vegan {
+    border-color: #35ce7d;
+}
+
+.button_menu_vegan:focus,
+.button_menu_vegan_select {
+    background: #35ce7d;
+}
+
+/* CHEKBOX */
+
+.chekbox {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dedede;
+    border-radius: 24px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.order__type__block_active .chekbox {
+    background: #35ce7d;
+    border: 4px solid white;
+}
+
+/* BACK */
+
+.back {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 20px;
+    width: 65px;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+}
+
+.back::before {
+    content: '';
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-image: url("img/back_ar.png");
+    background-repeat: no-repeat;
+}
+
+@media only screen
+and (max-width: 480px) {
+    .back::before {
+        float: inherit;
+        margin: 0 auto;
+    }
+}
+
+.button_withBack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
